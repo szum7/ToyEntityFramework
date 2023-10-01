@@ -3,11 +3,12 @@
 ## Setup
 1. Create Class Library project: DAL
 2. Install NuGet packages in DAL
-  1. Microsoft.EntityFrameworkCore.SqlServer
-  2. Microsoft.EntityFrameworkCore.Tools
-  3. Microsoft.EntityFrameworkCore.Design
+   - Microsoft.EntityFrameworkCore.SqlServer
+   - Microsoft.EntityFrameworkCore.Tools
+   - Microsoft.EntityFrameworkCore.Design
 3. Add Models folder and some models e.g.: Pulse.cs
-4. Add the DbContext file with a local connectionstring
+4. Add a DB in Microsoft SQL Manager Studio
+5. Add the DbContext file with a local connectionstring
 ```C#
 using Microsoft.EntityFrameworkCore;
 using TEF.ConsoleApp.Models;
