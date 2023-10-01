@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TEF.ConsoleApp.Models;
+﻿using EntityFrameworkCore.Triggers;
+using Microsoft.EntityFrameworkCore;
+using TEF.DAL.Models;
 
 namespace TEF.ConsoleApp
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : DbContextWithTriggers
     {
         public DbSet<Pulse> Pulses { get; set; }
+        public DbSet<Person> Persons { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -1,4 +1,4 @@
-﻿namespace TEF.ConsoleApp.Models
+﻿namespace TEF.DAL.Models
 {
     /// <summary>
     /// Dummy table for checking the DB connection.
